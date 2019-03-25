@@ -4,7 +4,13 @@ date: 2019-03-24 18:50:37
 tags:
 ---
 
-Have you ever wanted to convert the schema and results passed from the query API of BigQuery that looks like this: 
+Have you ever wanted to convert the schema and results passed from the query API of BigQuery into something more acceptable?
+There is an endless array of `{ f: { v: } }` nests to contend with sometimes. Well now you can transform it into something
+simpler!
+
+<!-- more -->
+
+We are transforming something that looks like this:
 
 ``` json
 {
