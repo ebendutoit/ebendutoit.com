@@ -1,0 +1,22 @@
+menu:
+    Blog: /
+    Archive: /archives/
+    Twitter: http://twitter.com/eebsidian
+    GitHub: https://github.com/ebendutoit
+    Rss: /atom.xml
+
+favicon: /favicon_eben.png
+logo: /favicon_eben.png
+
+# Comment
+# e.g disqus: seansun
+disqus: batcat81
+duoshuo:
+
+# Analytics
+# google-analytics:
+# ga: UA-xxxxxxxx-x
+
+# Copyright Infomation
+startyear: 2019
+
