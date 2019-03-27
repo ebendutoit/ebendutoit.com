@@ -140,7 +140,7 @@ convertBQToMySQLResults(schema, rows) {
             } else if (Array.isArray(result[colName])) {
                 let nextRow = {} 
                 for (var j in schemaCur) {
-                    nextRow[colName + "." + schemaCur[j].name] = rowsCur.v.f[j].v 
+                    nextRow[colName + "." + schemaCur[j].name] = Array.isArray(rowsCur.v.f[j].v) ? rowsCur.v.f[j].v.map( (value, index) => { return value.v }) : rowsCur.v.f[j].v
                 }
                 result[colName].push(nextRow)
             } else {
