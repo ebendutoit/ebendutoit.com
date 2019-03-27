@@ -93,7 +93,7 @@ Now you can, and for some [very complicated nested results](https://cloud.google
 See the *node.js* function below and enjoy! 
 
 ``` js
-convertBQToMySQLResults(schema, rows) {
+function convertBQToMySQLResults(schema, rows) {
 
     var resultRows = []
     
