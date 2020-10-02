@@ -4,16 +4,14 @@ date: 2020-10-02 12:55:56
 tags:
 ---
 
-Here is the code: 
+More than a year ago I wrote a post with a Javascript (node JS) function inside it that shows how we can recursively parse BigQuery rows results from their API into a flattened "mysql"-like JSON file. Recently I needed the python version of this function, so I provide it here. Enjoy!
+
 ``` python
 def convert_bq_rows_to_json(self, schema, rows):
 
         result_rows = []
         result = {}
         def recurse (schema_cur, rows_cur, col_name):
-            print("schema_cur: {0}".format(schema_cur))
-            print("rows_cur: {0}".format(rows_cur))
-            print("col_name: {0}".format(col_name))
 
             if isinstance(schema_cur, list):
                 print(3)
