@@ -13,10 +13,13 @@ logo: /favicon_eben.png
 disqus: batcat81
 duoshuo:
 
+skip_render: "mypage/**/*"
 # Analytics
 # google-analytics:
 # ga: UA-xxxxxxxx-x
 
+
 # Copyright Infomation
 startyear: 2019
+
 

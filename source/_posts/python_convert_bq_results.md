@@ -14,7 +14,6 @@ def convert_bq_rows_to_json(self, schema, rows):
         def recurse (schema_cur, rows_cur, col_name):
 
             if isinstance(schema_cur, list):
-                print(3)
                 for i in range(0, len(schema_cur)):
                     print(schema_cur[i])
                     if (col_name == ""):
@@ -37,7 +36,6 @@ def convert_bq_rows_to_json(self, schema, rows):
                     result[colName] = [] 
                     for x in rows_cur['v']: 
                         recurse(schema_cur['fields'], rows_cur['v'][x], col_name)
-                print(2)
             else:
                 if 'mode' in schema_cur and schema_cur['mode'] == "REPEATED":
                     if rows_cur['v'] != None:
